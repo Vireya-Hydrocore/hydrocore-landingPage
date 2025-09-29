@@ -358,11 +358,12 @@ section h2 {
 .porque-choose-card:hover {
     background-color: white;
     color: #0A1C47;
+    font-size: medium;
     transform: scale(1.10);
 }
 
 .porque-choose-card h3 {
-    font-size: 1.5em;
+    font-size: 1. 5em;
     color: var(--text-light);
     margin-bottom: 15px;
 }
