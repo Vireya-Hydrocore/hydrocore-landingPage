@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <div class="title-logo">
+                <h1>HydroCore</h1>
+            </div>
+            <div class="topics-head" id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Funcionalidades</a></li>
+                        <li><a href="#">Porque Vireya?</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Planos</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a id="bottom-cadastro" href="#">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button id="btn-hamb">☰</button>
+            <div id="under_title">
+                <h2>Nosso empresa promove e evolução e a sustentabilidade</h2>
+            </div>
+       </header>
+
+    <main>
+        <div id="funcionalidades">
+            <h2 id="funcionalidade-title">Funcionalidades Principais</h2>
+            <p id="funcionalidade-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores vero nobis nihil dolore.</p>
+            <div class="container-funcoes">
+                <div class="linha-img-dir">
+                    <div id="infos">
+                        <h2>Dash Board</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur ex porro rem expedita facere quam doloribus magni? Fugit accusantium neque voluptate a, quo delectus dolorum! At, tempora excepturi debitis nobis fuga assumenda iusto! Quis dolorum atque nam illum omnis.</p>
+                    </div>
+                    <div id="img">
+                        <img src="imgs/analyst-uses-computer-dashboard-data-600nw-2285412737.webp" alt="">
+                    </div>
+                </div>
+                <div class="linha-img reverse">
+                    <div id="infos">
+                        <h2>Dash Board</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur ex porro rem expedita facere quam doloribus magni? Fugit accusantium neque voluptate a, quo delectus dolorum! At, tempora excepturi debitis nobis fuga assumenda iusto! Quis dolorum atque nam illum omnis.</p>
+                    </div>
+                    <div id="img">
+                        <img src="imgs/analyst-uses-computer-dashboard-data-600nw-2285412737.webp" alt="">
+                    </div>
+                </div>
+                <div class="linha-img-dir">
+                    <div id="infos">
+                        <h2>Dash Board</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur ex porro rem expedita facere quam doloribus magni? Fugit accusantium neque voluptate a, quo delectus dolorum! At, tempora excepturi debitis nobis fuga assumenda iusto! Quis dolorum atque nam illum omnis.</p>
+                    </div>
+                    <div id="img">
+                        <img src="imgs/analyst-uses-computer-dashboard-data-600nw-2285412737.webp" alt="">
+                    </div>
+                </div>
+                <div class="linha-img reverse">
+                    <div id="infos">
+                        <h2>Dash Board</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur ex porro rem expedita facere quam doloribus magni? Fugit accusantium neque voluptate a, quo delectus dolorum! At, tempora excepturi debitis nobis fuga assumenda iusto! Quis dolorum atque nam illum omnis.</p>
+                    </div>
+                    <div id="img">
+                        <img src="imgs/analyst-uses-computer-dashboard-data-600nw-2285412737.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const btn = document.getElementById("btn-hamb");
+        const menu = document.getElementById("menu");
+    
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("mostrar");
+        });
+    </script>
