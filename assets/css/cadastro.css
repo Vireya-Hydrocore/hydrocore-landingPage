@@ -1,14 +1,11 @@
-
 body {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-
     background-color: #EAF2FF;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
  
@@ -16,11 +13,10 @@ main {
     display: flex;
     width: 75%;
     background-color: #fff;
-    height: 835px;
+    height: 950px;
     border-radius: 10px;
     margin-top: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.25);
-
 }
  
 .container-esquerdo {
@@ -132,7 +128,7 @@ input {
     opacity: 0.5;
     z-index: 1;
 }
-
+ 
 .sobreposicao img {
     width: 100%;
     height: 100%;
@@ -146,71 +142,65 @@ input {
     z-index: 2;
     animation: float 3s ease-in-out infinite;
 }
-
  
 .celular img {
     width: 350px;
 }
  
-
 .input-senha {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-
+ 
 .input-senha input {
     padding: 10px;
     font-size: 15px;
     flex: 1;
 }
-
+ 
 .password-toggle {
     position: absolute;
     right: 10px;
     margin-top: -20px;
     cursor: pointer;
 }
-
+ 
 @keyframes float {
     0% {
         transform: translateY(0px);
     }
-
  
     50% {
         transform: translateY(-15px);
     }
  
-
     100% {
         transform: translateY(0px);
     }
 }
+ 
 /* Responsividade */
 @media (max-width: 992px) {
     main {
         flex-direction: column;
         width: 75%;
     }
-
  
     .container-direito {
         display: none;
     }
  
-
     .container-esquerdo {
         padding: 30px;
     }
 }
-
+ 
 @media (max-width: 576px) {
     body {
         padding: 10px;
     }
-
  
     main {
         width: 75%;
