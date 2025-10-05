@@ -34,6 +34,7 @@ header, nav, .topics-head ul, .topics-head li, .topics-head a {
 /* Reaplica o layout do header */
 header {
   display: flex;
+  font-family: 'Poppins', sans-serif;
   justify-content: space-between;
   align-items: center;
   background: #0a1a3c;
@@ -91,7 +92,6 @@ header {
   margin-top: 30px;
   margin-bottom: 50px; 
 }
-
 
 #pontos {
   display: flex;
@@ -212,7 +212,7 @@ header {
 }
 
 #icon:hover {
-    background: #4460F6; /* muda a cor no hover */
+    background: #2c45cf; /* muda a cor no hover */
 }
 
 #icon:hover svg {
@@ -273,7 +273,7 @@ header {
 } 
 #pontos section:hover{ 
     flex: 1; min-width: 250px; 
-    background: #4460F6; padding: 20px; 
+    background: #3a51d9; padding: 20px; 
     border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; 
     color: #fff; transform: scale(1.05); 
 } section { 

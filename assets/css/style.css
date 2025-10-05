@@ -209,6 +209,7 @@ header{
 }
 
 #funcionalidade-title{
+    scroll-margin-top: 80px;
     text-align: center;
     padding-top: 15px;
 }
@@ -335,6 +336,7 @@ header{
 
 
 #sobre-nos {
+    scroll-margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -358,6 +360,7 @@ header{
 }
 
 .sobrenos-content h2 {
+
     font-size: 2rem;
     font-family: 'Poppins';
     color: #0a1a3b;
