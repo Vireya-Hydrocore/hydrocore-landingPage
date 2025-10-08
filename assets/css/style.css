@@ -81,7 +81,7 @@ header{
 #bottom-cadastro{
     display: inline-flex;
     text-decoration: underline;
-    background-color: #2a6bb0;
+    background-color: #2b4eff;
     color: white;
     border-radius: 5%;
     text-decoration: none;
@@ -206,7 +206,10 @@ header{
 
 }
 
-
+.container-caixa:hover{
+    transition: transform 0.6s ease;
+    transform: scale(1.10);
+}
 /* ======================= Funcionalidades ======================= */
 
 .funcionalidades-section {
