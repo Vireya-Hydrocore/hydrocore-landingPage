@@ -22,7 +22,7 @@ body{
 
 
 
-/* Corrige o header */
+
 header, nav, .topics-head ul, .topics-head li, .topics-head a {
   all: unset;
   display: revert;
@@ -31,7 +31,6 @@ header, nav, .topics-head ul, .topics-head li, .topics-head a {
   list-style: none;
 }
 
-/* Reaplica o layout do header */
 header {
   display: flex;
   font-family: 'Poppins', sans-serif;
@@ -295,6 +294,7 @@ main {
   padding: 30px;
   background: #f7f9ff;
   border-radius: 16px;
+  font-size: large;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
