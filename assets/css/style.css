@@ -41,11 +41,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 5px 20px;
     color: white;
     z-index: 10; /* Para ficar sempre por cima*/
     font-family: 'Poppins', sans-serif;
-
+    font-size: 17px;
+    padding: 10px;
 }
 #btn-hamb {
     font-size: 24px;
@@ -58,25 +59,40 @@ header{
 
 .topics-head ul{
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    margin: 0; 
+    margin-top: 14px;
+    padding: 0;
+    justify-content: center;
     list-style: none;
     color: white;
 }
 .topics-head li{
-   padding: 0 20px;
-   text-decoration: none;
+    display: inline;
+    padding: 0 15px;
+    text-decoration: none;
+
 }
+
 .topics-head a{
     text-decoration: none;
     color: white;
 }
 #bottom-cadastro{
-    font-style: oblique;
+    display: inline-flex;
     text-decoration: underline;
-    padding: 15px;
-    border: 1px white solid;
-    border-radius: 10px;
-    font-family: 'Outfit', sans-serif;
+    background-color: #2a6bb0;
+    color: white;
+    border-radius: 5%;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 100px;
+    align-items: center;
+    margin-left: auto;
+    margin-top: -11px;
+
 }
 @media (max-width: 768px) {
     .topics-head {

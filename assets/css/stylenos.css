@@ -41,26 +41,30 @@ header {
   padding: 15px 60px;
 }
 #bottom-cadastro{
-    font-style: oblique;
+    display: inline-flex;
     text-decoration: underline;
-    padding: 15px;
-    border: 1px white solid;
-    border-radius: 10px;
-    font-family: 'Outfit', sans-serif;
+    background-color: #2a6bb0;
+    color: white;
+    border-radius: 5%;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 30px;
+    align-items: center;
+    margin-top: -25px;
+    margin-bottom: auto;
+
 }
 .topics-head ul {
   display: flex;
-  gap: 25px;
+  gap: 45px;
+  margin-top: 10px;
 }
 
 .topics-head a {
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.topics-head a:hover {
-  color: #0f1850;
+    color: white;
+    cursor: pointer;
 }
 
 #btn-hamb {
