@@ -32,12 +32,18 @@ header, nav, .topics-head ul, .topics-head li, .topics-head a {
 }
 
 header {
-  display: flex;
-  font-family: 'Poppins', sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  background: #0a1a3c;
-  padding: 15px 60px;
+    background-color:#0c2356;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    color: white;
+    z-index: 10; /* Para ficar sempre por cima*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding: 10px;
 }
 #bottom-cadastro{
     display: inline-flex;
@@ -62,8 +68,8 @@ header {
 }
 
 .topics-head a {
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
 #btn-hamb {

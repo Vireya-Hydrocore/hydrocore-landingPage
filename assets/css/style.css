@@ -206,9 +206,13 @@ header{
 
 }
 
-.container-caixa:hover{
-    transition: transform 0.6s ease;
-    transform: scale(1.10);
+.container-caixa {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.container-caixa:hover {
+  transform: scale(1.05);
 }
 /* ======================= Funcionalidades ======================= */
 
@@ -217,7 +221,8 @@ header{
     margin: 0 auto;
     padding: 60px 20px;
     font-family: Arial, sans-serif;
-    padding-bottom: 8%;
+    padding-bottom: 7%;
+    
 }
   
 .funcionalidades-section h2 {
@@ -301,13 +306,16 @@ header{
     width: 80%;
     color: white;
 }
+
+
 #porque h2{
+    margin-top: 4%;
     font-size: 35px;
 }
 #porque-section{
     background-color: var(--azul-escuro);
     padding-bottom: 80px;
-    margin-bottom: 8%;
+    margin-bottom: 7.5%;
 }
 .grid-porques{
     display: grid;
