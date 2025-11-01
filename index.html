@@ -1,332 +1,350 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vireya</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="shortcut icon" href="/assets/img/vireya_icon.png" type="image/x-icon">
+    <title>Vireya | HydroCore</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/imgs/vireya_icon.png" type="image/x-icon">
 </head>
 
-<body> 
-
-    <header class="header">
-        <div class="logo">Vireya</div>
-        <nav class="menu">
+<body>
+<header>
+    <div class="title-logo">
+        <img src="/assets/imgs/vireya_icon.png">
+        <h1>Hydrocore</h1>
+    </div>
+    <div class="topics-head" id="menu">
+        <nav>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#funcionalidade-title">Funcionalidades</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
                 <li><a href="#planos">Planos</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <li><a id="bottom-login" href="login.html">Login</a></li>
             </ul>
         </nav>
-        <div id="botaoCadastro">
-            <a href="cadastro.html">Cadastrar-se</a>
+    </div>
+    <button id="btn-hamb">☰</button>
+</header>
+<main>
+    <div class="frame-img">
+        <div id="introducao">
+            <div class="container-block">
+                <h2>Gestão inteligente para tratamento de água industrial</h2>
+                <p>Simplifique processos, reduza custos e aumente a eficiência da sua ETA com a tecnologia da
+                    HydroCore.</p>
+            </div>
         </div>
-    </header>    
+    </div>
 
-    <main>
-        <section class="principal">
-            <div class="principal-content">
-                <p style="padding: 2%;"><strong style="font-size: 38px;">Gestão inteligente para Estações de
-                        Tratamento de Água</strong></p>
-                <p style="padding: 2%; font-size: 20px;">"Preservando nosso bem mais precioso, a água, com tecnologia e
-                    eficiência"</p>
+
+    <div id="beneficios">
+        <h2>Benefícios</h2>
+        <p id="text-expln">Com a HydroCore, o tratamento de água se torna mais eficiente e organizado. O app reduz
+            erros manuais, otimiza o uso de produtos químicos, <br>
+            facilita a gestão de tarefas e gera relatórios confiáveis. Assim, indústrias ganham em economia,
+            sustentabilidade e qualidade no processo.</p>
+        <div class="container-beneficios">
+            <div class="container-caixa">
+                <h3>Calculadora Química</h3>
+                <p>Controle preciso das dosagens de produtos químicos para manter a qualidade da água e reduzir
+                    desperdícios.</p>
             </div>
-        </section>
-
-
-        <!------------------------------- BENEFÍCIOS ------------------------------->
-        
-        <section id="beneficios">
-            <h2 id="beneficiosTitulo">Benefícios do Vireya</h2>
-            <p id="beneficiosSubtitulo">Simplifique a gestão da sua ETA com nossa solução completa que integra todas as
-                ferramentas, no lugar certo e em um único sistema.</p>
-
-            <div class="beneficios-grid">
-                <div class="beneficios-card">
-                    <h3>Calculadora Química</h3>
-                    <p>Controle preciso de dosagens de produtos químicos para garantir uma água de fácil manuseio e
-                        dentro dos padrões.</p>
-                </div>
-                <div class="beneficios-card">
-                    <h3>Sistema de Reversão de Filtro</h3>
-                    <p>Geração automática de relatórios de reversão de filtros, com base em parâmetros de consumo de
-                        água e qualidade.</p>
-                </div>
-                <div class="beneficios-card">
-                    <h3>Relatórios Digitais Automatizados</h3>
-                    <p>Geração automática de relatórios de conformidade com a legislação ambiental e de saúde,
-                        garantindo a sua conformidade legal.</p>
-                </div>
-                <div class="beneficios-card">
-                    <h3>Gestão de Equipe Integrada</h3>
-                    <p>Monitore tarefas, mantenha o controle e garanta a produtividade da sua equipe de tratamento de
-                        água de maneira eficiente.</p>
-                </div>
+            <div class="container-caixa">
+                <h3>Reversão Química</h3>
+                <p>Geração automática de relatórios de reversão de filtros, com base em parâmetros de consumo de
+                    água e qualidade.</p>
             </div>
-        </section>
-
-        <!------------------------------- FUNCIONALIDADES ------------------------------->
-
-        <section id="funcionalidades" class="funcionalidades-section bg-gray">
-            <div class="container">
-                <h2 id="funcionalidades-titulo">Funcionalidades Principais</h2>
-                <p>Conheça as ferramentas que transformam a gestão da sua Estação de Tratamento de Água</p>
-
-                <div class="funcionalidades-row">
-                    <div class="content">
-                        <h3>Dashboard Analítico</h3>
-                        <p>Visão panorâmica dos dados críticos da sua ETA em tempo real. Monitore indicadores de
-                            desempenho, consumo de água e custo, tudo em um só lugar, com uma interface intuitiva.</p>
-                        <ul>
-                            <li>Relatórios de análise de qualidade da água</li>
-                            <li>Indicadores de desempenho em tempo real</li>
-                            <li>Alertas visuais para parâmetros fora do padrão</li>
-                        </ul>
-                    </div>
-                    <div class="funcionalidade-image">
-                        <img src="https://media.gettyimages.com/id/1460220646/pt/foto/planning-corporate-or-business-man-with-tablet-for-investment-strategy-finance-growth-or.jpg?s=612x612&w=0&k=20&c=AWj9sQ94hAo625koW2GC4ygFuKAEU0WrF3mI1jy4xJA="
-                            style="width:100%; height:auto; border-radius: 8px;">
-                    </div>
-                </div>
-
-                <div class="funcionalidades-row reverse">
-                    <div class="content">
-                        <h3>Gestão de Equipe e Tarefas</h3>
-                        <p>Organize o trabalho da sua equipe com um sistema completo de gerenciamento de tarefas. Defina
-                            responsabilidades, acompanhe o progresso e garanta que nada passe despercebido.</p>
-                        <ul>
-                            <li>Relatórios interativos de qualidade da água</li>
-                            <li>Acompanhamento de custos e indicadores</li>
-                            <li>Alertas visuais para parâmetros fora do padrão</li>
-                        </ul>
-                    </div>
-                    <div class="funcionalidades-image">
-                        <img src="https://www.blog.auvo.com/hs-fs/hubfs/image2-2.jpg?width=672&name=image2-2.jpg"
-                            style="width:100%; height:auto; border-radius: 8px;">
-                    </div>
-                </div>
-
-                <div class="funcionalidades-row">
-                    <div class="content">
-                        <h3>Calculadora Química Avançada</h3>
-                        <p>Calcule dosagens precisas de produtos químicos com base nos parâmetros reais da água.
-                            Economize produtos e garanta a qualidade do tratamento.</p>
-                        <ul>
-                            <li>Cálculos automáticos baseados em parâmetros da água</li>
-                            <li>Sugestões de otimização de produtos químicos</li>
-                            <li>Histórico de dosagens para análise de tendências</li>
-                        </ul>
-                    </div>
-                    <div class="feature-image">
-                        <img src="https://thumbs.dreamstime.com/b/an%C3%A1lise-de-gr%C3%A1fico-com-calculadora-conceito-financeira-377763620.jpg"
-                            alt="Calculadora Química" style="width:100%; height:auto; border-radius: 8px;">
-                    </div>
-                </div>
-
-                <div class="funcionalidades-row reverse">
-                    <div class="content">
-                        <h3>Sistema de Alertas Inteligente</h3>
-                        <p>Receba notificações automáticas sobre quaisquer baixas, problemas, ou Desvios no processo de
-                            tratamento de água, permitindo que você tome medidas proativas e evite interrupções na
-                            operação.</p>
-                        <ul>
-                            <li>Alertas personalizáveis com antecedência configurável</li>
-                            <li>Notificação de produtos próximos ao vencimento</li>
-                            <li>Lembretes de manutenção preventiva de equipamentos</li>
-                        </ul>
-                    </div>
-                    <div class="feature-image">
-                        <img src="https://media.istockphoto.com/id/1503167694/pt/foto/young-man-using-phone-with-danger-alert.jpg?s=612x612&w=0&k=20&c=pl8i3Zu2qCEWLU4y3FNh0dTzbX4FXpMneQdwPsblW3I=b"
-                            style="width:100%; height:auto; border-radius: 8px;">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!------------------------------- POR QUE VIREYA? ------------------------------->
-
-        <section class="porque-choose-section">
-            <div id="porque">
-                <h2 style="margin: 1% auto;">Por que Escolher o HydroCore?</h2>
-                <p style="width: 70%; margin: 0% auto;">Nossa solução foi desenvolvida especificamente para o setor de
-                    tratamento de água, atendendo às necessidades reais das ETAs.</p>
-
-                <div class="porque-choose-grid">
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Gestão Completa de ETAs</h3>
-                        <p>Oferecemos um sistema integrado que abrange todas as operações do processo de tratamento de
-                            água, desde o controle de qualidade até a gestão da equipe.</p>
-                    </div>
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Controle de Estoque Inteligente</h3>
-                        <p>Monitore o inventário de produtos químicos, evite desperdícios e garanta sempre o que sua
-                            equipe precisa para operar de forma eficiente e sem interrupções.</p>
-                    </div>
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Gerenciamento de Equipe</h3>
-                        <p>Otimize a alocação de recursos humanos, distribua tarefas e acompanhe o garante que todos os
-                            procedimentos sejam seguidos conforme o planejado.</p>
-                    </div>
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Conformidade com a Legislação</h3>
-                        <p>Mantenha sua estação de tratamento de água em conformidade com as normas e regulamentos,
-                            evitando multas e garantindo a qualidade de água tratada.</p>
-                    </div>
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Sistema de Alertas Preventivos</h3>
-                        <p>Receba notificações em tempo real sobre quaisquer problemas, prevenindo falhas e interrupções
-                            no processo de tratamento de água.</p>
-                    </div>
-                    <div class="porque-choose-card">
-                        <!-- Colocar imagem de icone aqui-->
-                        <h3 class="porque-titulo-card">Suporte Técnico Especializado</h3>
-                        <p>Conte com o suporte de nossa equipe de especialistas, pronta para auxiliar em qualquer dúvida
-                            ou problema, garantindo o bom funcionamento de sua ETA.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!------------------------------- SOBRE NÓS ------------------------------->
-
-        <section class="sobrenos-section container">
-            <div class="sobrenos-image">
-                <img src="https://via.placeholder.com/600x400/CCCCCC/333333?text=Time+HydroCore" alt="Time HydroCore"
-                    style="width:100%; height:auto; border-radius: 8px;">
-            </div>
-            <div class="sobrenos-content">
-                <h2>Sobre Nós</h2>
-                <p>A HydroCore nasceu da união entre especialistas em tratamento de água e desenvolvedores de
-                    tecnologia, com o objetivo de criar uma solução que realmente atendesse às necessidades do setor.
+            <div class="container-caixa">
+                <h3>Relatórios e Histórico</h3>
+                <p>Tenha dados completos sobre conformidade ambiental e sanitária, sempre prontos para auditorias.
                 </p>
-                <p>Nossa missão é simplificar a gestão de estações de tratamento de água, otimizando processos,
-                    reduzindo custos, aumentando a produtividade e a qualidade da água tratada.</p>
-                <p>Acreditamos que a tecnologia pode ser uma poderosa aliada na preservação dos recursos hídricos e na
-                    garantia de água de qualidade para todos.</p>
-                <div class="icones">
-                    <div class="icone"></div> <!--pode ser de instagram, wpp, etc.-->
-                    <div class="icone"></div>
-                    <div class="icone"></div>
-                </div>
             </div>
-        </section>
-
-        <!------------------------------- PLANOS ------------------------------->
-
-        <section id="planos" class="planos-section bg-gray">
-            <div class="container">
-                <h2>Planos e Preços</h2>
-                <p>Escolha o plano ideal para as necessidades e velocidades da sua estação de tratamento de água.</p>
-
-                <div class="planos">
-                    <div class="planos-card">
-                        <div class="planos-card-content">
-                            <h3>Básico</h3>
-                            <p class="subtitulo">Ideal para pequenas ETAs</p>
-                            <p class="preco">R$ 499,90 <span>/mês</span></p>
-                            <ul>
-                                <li>Até 3 usuários</li>
-                                <li>Dashboard básico</li>
-                                <li>Controlador de Filtro</li>
-                                <li>Relatórios básicos</li>
-                                <li>Gestão de tarefas básicas</li>
-                                <li>Suporte por e-mail</li>
-                            </ul>
-                            <button class="button">Assinar Agora</button>
-                        </div>
-                    </div>
-
-                    <div class="planos-card highlighted">
-                        <div class="selo">MAIS POPULAR</div>
-                        <div class="planos-card-content">
-                            <h3>Profissional</h3>
-                            <p class="subtitulo">Ideal para médias e maiores ETAs</p>
-                            <p class="preco">R$ 990,90 <span>/mês</span></p>
-                            <ul>
-                                <li>Até 10 usuários</li>
-                                <li>Dashboard analítico</li>
-                                <li>Calculadora química avançada</li>
-                                <li>Relatórios automáticos avançados</li>
-                                <li>Sistema de alertas proativos</li>
-                                <li>Gestão de tarefas avançada</li>
-                                <li>Integrações de API</li>
-                                <li>Suporte prioritário</li>
-                            </ul>
-                            <button class="button">Assinar Agora</button>
-                        </div>
-                    </div>
-
-                    <div class="planos-card">
-                        <div class="planos-card-content">
-                            <h3>Avançado</h3>
-                            <p class="subtitulo">Para grandes corporações</p>
-                            <p class="preco">R$ 1990,90 <span>/mês</span></p>
-                            <ul>
-                                <li>Usuários ilimitados</li>
-                                <li>Dashboard personalizado</li>
-                                <li>Calculadora química avançada</li>
-                                <li>Relatórios customizados</li>
-                                <li>Sistema de alertas premium</li>
-                                <li>Gestão de projetos e equipes</li>
-                                <li>Controle de estoque avançado</li>
-                                <li>API para integrações</li>
-                            </ul>
-                            <button class="button">Assinar Agora</button>
-                        </div>
-                    </div>
-                </div>
-
-        </section>
-    </main>
-
-    <!------------------------------- FOOTER ------------------------------->
-
-    <footer id="footer" class="footer-vireya">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h2 class="logo">VIREYA</h2>
-                <p>Criamos possibilidades para um mundo mais conectado.</p>
-                <p class="bold">Seja Vireya.</p>
-            </div>
-
-            <div class="footer-col">
-                <h3>Contato</h3>
-                <p>@vireyabrasil</p>
-                <p>vireyabrasil@gmail.com</p>
-                <p>(11) 00000-0000</p>
-            </div>
-
-            <div class="footer-col">
-                <h3>Redes Sociais</h3>
-                <p><a href="#">Instagram</a></p>
-                <p><a href="#">Twitter</a></p>
-                <p><a href="#">LinkedIn</a></p>
-            </div>
-
-            <div class="footer-col">
-                <h3>Legal</h3>
-                <p><a href="#">Termos</a></p>
-                <p><a href="#">Privacidade</a></p>
+            <div class="container-caixa">
+                <h3>Tarefas e Produtividade</h3>
+                <p>Monitore atividades da equipe em tempo real e mantenha a operação da ETA sempre sob controle.</p>
             </div>
         </div>
+    </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 Vireya. Todos os direitos reservados.</p>
+    <section class="funcionalidades-section">
+        <h2 id="funcionalidade-title">Funcionalidades Principais</h2>
+        <p id="funcionalidade-sub">Tornamos o tratamento de água mais eficiente ao integrar dados, processos e
+            pessoas em uma única plataforma.</p>
+        <div class="container-funcoes">
+            <div class="linha-img-dir">
+                <div class="infos">
+                    <h2>Calculadora Química</h2>
+                    <p>A calculadora química da HydroCore permite que os operadores insiram dados como volume de
+                        água e parâmetros de qualidade
+                        para que o sistema indique automaticamente o tipo e a quantidade correta de produto químico
+                        a ser utilizado. Isso evita desperdícios,
+                        garante mais precisão no tratamento e reduz o risco de falhas que poderiam comprometer a
+                        qualidade da água.</p>
+                </div>
+                <div class="img">
+                    <img src=" /assets/imgs/imagemCientista.jpg" alt="mulher fazendo calculos com quimicos">
+                </div>
+            </div>
+            <div class="linha-img reverse">
+                <div class="infos">
+                    <h2>Controle de Estoque</h2>
+                    <p>Com o controle de estoque, todos os produtos químicos da ETA ficam registrados e organizados
+                        dentro do app.
+                        O sistema atualiza em tempo real as quantidades disponíveis, avisa quando algum item está
+                        acabando e ajuda a planejar compras com antecedência.
+                        Assim, a indústria nunca corre o risco de ficar sem insumos importantes para o processo de
+                        tratamento.</p>
+                </div>
+                <div class="img">
+                    <img src=" /assets/imgs/imagemEstoque.webp" alt="Homen com tablete em um armazem de estoque">
+                </div>
+            </div>
+            <div class="linha-img-dir">
+                <div class="infos">
+                    <h2>Gestão de Tarefas</h2>
+                    <p>A funcionalidade de tarefas distribui automaticamente as atividades entre os funcionários,
+                        deixando claro quem deve fazer o quê em cada etapa do processo.
+                        Isso aumenta a organização da equipe, evita retrabalho e garante que todas as etapas do
+                        tratamento sejam realizadas dentro do prazo, com acompanhamento do gestor em tempo real.</p>
+                </div>
+                <div class="img">
+                    <img src=" /assets/imgs/imagemGestaoTarefas.jpg" alt="pessoa fazendo gestão de atividades">
+                </div>
+            </div>
+            <div class="linha-img reverse">
+                <div class="infos">
+                    <h2>Histórico e Relatórios</h2>
+                    <p>Todas as informações registradas no app ficam salvas em um histórico detalhado, que pode ser
+                        transformado em relatórios e gráficos completos.
+                        Essa ferramenta ajuda tanto no acompanhamento interno do desempenho da ETA quanto no
+                        cumprimento de exigências legais,
+                        já que os dados podem ser utilizados em auditorias e fiscalizações ambientais.</p>
+                </div>
+                <div class="img">
+                    <img src=" /assets/imgs/imagemComputador.webp" alt="">
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="assets/js/landingpage.js"></script>
+    <section id="porque-section">
+        <div id="porque">
+            <h2>Por que escolher HydroCore?</h2>
+            <p>Nossa solução foi desenvolvida especificamente para o setor de tratamento de água, atendendo às
+                necessidades reais das ETAs.</p>
+            <div class="grid-porques">
+                <div class="block-porque">
+                    <h3>Gestão Completa de ETAs</h3>
+                    <br>
+                    <p>A HydroCore integra todas as etapas do tratamento de água em um único sistema. Desde o
+                        controle de qualidade da água até a organização das equipes, você acompanha cada detalhe em
+                        tempo real, garantindo eficiência e visão completa da operação.</p>
+                </div>
+                <div class="block-porque">
+                    <h3>Automatização de Processos</h3>
+                    <br>
+                    <p>Os registros manuais dão lugar a processos automatizados que reduzem erros, aceleram tarefas
+                        e aumentam a segurança da operação. Com tudo centralizado, gestores ganham mais
+                        tempo e confiabilidade nos resultados.</p>
+                </div>
+                <div class="block-porque">
+                    <h3>Conformidade com a Legislação</h3>
+                    <br>
+                    <p>Nossa solução ajuda a manter sua ETA em conformidade com as normas ambientais e de saúde. Os
+                        relatórios automáticos garantem transparência, evitam multas e reforçam a qualidade da água
+                        entregue à comunidade.</p>
+                </div>
+                <div class="block-porque">
+                    <h3>Escalabilidade</h3>
+                    <br>
+                    <p>Seja em pequenas ETAs ou em grandes indústrias, o HydroCore se adapta ao porte da operação. A
+                        plataforma foi criada para crescer junto com o negócio, acompanhando a demanda sem perder
+                        desempenho ou eficiência.</p>
+                </div>
+                <div class="block-porque">
+                    <h3>Equipe Especializada</h3>
+                    <br>
+                    <p>O desenvolvimento do HydroCore combina a visão prática de quem vive o dia a dia das ETAs com
+                        a inovação da tecnologia. Essa união garante soluções acessíveis, reais e eficientes para os
+                        desafios do setor.</p>
+                </div>
+                <div class="block-porque">
+                    <h3>Gestão Sustentável</h3>
+                    <br>
+                    <p>Com foco em sustentabilidade, promovemos o uso inteligente da água e o tratamento adequado
+                        dos efluentes. O controle preciso reduz desperdícios, melhora a eficiência e minimiza os
+                        impactos ambientais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <img id="img-nos" src=" /assets/imgs/equipeVireya.jpg" alt="Desenvolvedores do Vireya">
+        <div class="sobrenos-content">
+            <h2>Sobre Nós</h2>
+            <p>O Vireya nasceu da união entre especialistas em tratamento de água e desenvolvedores de
+                tecnologia. Nosso objetivo é oferecer uma solução que realmente atenda às necessidades das ETAs,
+                simplificando processos, aumentando a produtividade e garantindo água de qualidade. Acreditamos que
+                a tecnologia é a chave para preservar os recursos hídricos e construir um futuro sustentável</p>
+            <a id="link-saibamais" href="sobrenosreal.html">Saiba mais</a>
+        </div>
+    </section>
+
+    <div id="planos">
+        <div class="container-planos">
+            <h2>Planos Preço</h2>
+            <p>Escolha o plano ideal para as necessidades e velocidades da sua estação de tratamento de água.</p>
+            <div class="grid-planos">
+                <div class="card-assinar">
+                    <h3>Starter</h3>
+                    <p>Ideal para pequenas ETAs</p>
+                    <p class="preco">R$ 199,00 /mês</p>
+                    <ul>
+                        <li>Gestão de usuários</li>
+                        <li>Escolha e compra</li>
+                        <li>Cadastro de funcionários</li>
+                        <li>Permissões por tela</li>
+                        <li>Parâmetros da água</li>
+                        <li>Cálculo de químicos</li>
+                        <li>Estoque de químicos</li>
+                        <li>Entrada/saída estoque</li>
+                        <li>Avisos na Home</li>
+                    </ul>
+                    <button onclick="window.location.href=' /assets/pages/landingpage/login.jsp'">
+                        Assinar Agora
+                    </button>
+                </div>
+                <div class="card-assinar-highlit">
+                    <h3>Professional</h3>
+                    <p>Ideal para médias e maiores ETAs</p>
+                    <p class="preco">R$ 599,90 /mês</p>
+                    <ul>
+                        <li>Tudo do Starter</li>
+                        <li>Dashboard com gráficos</li>
+                        <li>Dados dinâmicos</li>
+                        <li>Tarefas da equipe</li>
+                        <li>Calendário de avisos</li>
+                        <li>Exportar para Excel</li>
+                        <li>Relatórios legais</li>
+                        <li>Edição de perfil</li>
+                        <li>Preferências do usuário</li>
+                    </ul>
+                    <!-- Ao clicar no botão é enviado para a pagina de login -->
+                    <button onclick="login.html">
+                        Assinar Agora
+                    </button>
+                </div>
+                <div class="card-assinar">
+                    <h3>Enterprise</h3>
+                    <p>Para grandes corporações</p>
+                    <p class="preco">R$ 1599,00 /mês</p>
+                    <ul>
+                        <li>Tudo do Professional</li>
+                        <li>Dashboard avançado</li>
+                        <li>Análises preditivas</li>
+                        <li>Comparações mensais</li>
+                        <li>Relatórios automáticos</li>
+                        <li>Alertas inteligentes</li>
+                        <li>Integração do estoque</li>
+                        <li>Controle de custos</li>
+                        <li>Gestão avançada</li>
+                    </ul>
+                    <!-- Ao clicar no botão é enviado para a pagina de login -->
+                    <button onclick="window.location.href=' /assets/pages/landingpage/login.jsp'">
+                        Assinar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="grid-footer">
+        <div class="links-grid">
+            <img id="img-foot" src="assets/imgs/Group 1.png" alt="Logo Vireya">
+            <nav class="nav-footer">
+                <p class="title-points">Ferramentas</p>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Calculadora Química</li>
+                    <li>Controle de Estoque</li>
+                    <li>Tratamento de Água</li>
+                    <li>Criação de Relatórios</li>
+                    <li>Controle de Atividades e Avisos</li>
+                </ul>
+            </nav>
+            <nav class="nav-footer">
+                <p class="title-points">Contatos</p>
+                <ul>
+                    <li>(11) 99286-4575</li>
+                    <li>Instituto J&F</li>
+                    <li>@vireyabrasil</li>
+                    <li>R. Irineu José Bordon, 335 - Parque Anhanguera, São Paulo - SP, 05120-060</li>
+                </ul>
+            </nav>
+
+            <nav class="nav-footer">
+                <p class="title-points">Outros</p>
+                <ul>
+                    <li><a href="sobrenosreal.html">Sobre nós</a></li>
+                    <li><a href="loginAdmin.html">Área Restrita</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+        <div class="rodape-footer">
+            <div id="direitos-cont">
+                <p>© 2025 Vireya. Todos os direitos reservados.</p>
+            </div>
+            <div id="icones-midias">
+                <div class="dist-icon">
+                    <a href="https://instagram.com" id="icon" target="_blank" class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                    d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2C6 4 4 6 4 7.8v8.4C4 18 6 20 7.8 20h8.4c1.8 0 3.8-2 3.8-3.8V7.8C20 6 18 4 16.2 4H7.8Zm8.7 1.6a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Zm-4.5 2.4a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4Zm0 2a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="dist-icon">
+                    <a href="https://linkedin.com" class="icon" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                    d="M4.98 3.5c0 1.38-1.11 2.5-2.48 2.5A2.5 2.5 0 0 1 0 3.5C0 2.12 1.11 1 2.5 1S5 2.12 5 3.5zM.5 23h4V7.98h-4V23zM8 7.98h3.8v2.06h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V23h-4v-6.52c0-1.56-.03-3.57-2.17-3.57-2.18 0-2.51 1.7-2.51 3.46V23H8V7.98z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="dist-icon">
+                    <a href="https://wa.me/5511999999999" class="icon" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                    d="M17.47 14.3c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.14-.62.14-.19.27-.71.9-.88 1.08-.16.18-.33.2-.6.07-.27-.14-1.14-.42-2.18-1.35-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.33.41-.49.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.98 2.67 1.12 2.85.14.18 1.93 2.95 4.68 4.14.65.28 1.15.45 1.55.58.65.21 1.23.18 1.69.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.19.16-1.31-.07-.12-.25-.2-.52-.34ZM12.01 2a9.95 9.95 0 0 0-8.5 15.1l-1.8 5.28 5.44-1.78a9.96 9.96 0 0 0 4.86 1.23h.01c5.5 0 9.97-4.47 9.98-9.96A9.95 9.95 0 0 0 12 2Zm0 18.2c-1.53 0-3.04-.41-4.36-1.18l-.31-.18-3.23 1.05 1.06-3.12-.2-.32A7.96 7.96 0 0 1 12 4.03a7.95 7.95 0 0 1 0 15.9Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="dist-icon">
+                    <a href="https://github.com" target="_blank" class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                    d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.7 2.2 3.7 1.6v-1.6c-2.6-.3-5.3-1.3-5.3-6 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.5.2 2.6.1 2.9.8.9 1.2 1.9 1.2 3.2 0 4.7-2.7 5.7-5.3 6v1.7c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src=" /assets/js/script.js"></script>
+
 </body>
-
 </html>

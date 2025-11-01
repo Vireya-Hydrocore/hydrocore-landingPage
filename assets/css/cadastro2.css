@@ -6,85 +6,97 @@ body {
     background-color: #EAF2FF;
     display: flex;
     justify-content: center;
-    transform: scale(0.85);
-    transform-origin: top;
     align-items: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    min-height: 100vh;
 }
 
 main {
     display: flex;
-    width: 80%;
+    width: 75%;
     background-color: #fff;
-    height: 825px;
+    height: 700px;
     border-radius: 10px;
     margin-top: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 6px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* impede qualquer scroll */
+}
+
+main#m2{
+    height: 700px;
 }
 
 .container-esquerdo {
     flex: 1;
-    padding: 40px;
+    padding: 24px 28px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    font-size: larger;
+    font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .logo img {
-    width: 40px;
+    width: 30px;
+    margin-right: 6px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin: 10px 0 14px 0;
+    font-size: 20px;
     text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 label {
-    margin: 7px;
-    font-size: 14px;
+    margin: 4px 0;
+    font-size: 13px;
     color: #333;
 }
 
 input {
-    padding: 10px;
+    padding: 7px;
     border: none;
     border-bottom: 2px solid #d9d9d9;
-    /* margin-bottom: 20px; */
-    font-size: 15px;
+    margin-bottom: 12px;
+    font-size: 13px;
     outline: none;
     background: none;
 }
 
 .checkbox {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 13px;
     color: #000;
+    margin-top: 6px;
+}
+
+.checkbox input {
+    margin-right: 6px;
 }
 
 .botao {
     background: #000;
     color: #fff;
     border: none;
-    padding: 15px;
-    font-size: 15px;
+    padding: 20px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 10px;
+    margin-top: 8px;
     transition: 0.3s;
 }
 
@@ -93,8 +105,8 @@ input {
 }
 
 .login-text {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 13px;
     color: #444;
     text-align: center;
 }
@@ -115,12 +127,11 @@ input {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 20px;
+    padding: 10px;
 }
 
 .sobreposicao {
     position: absolute;
-    color: #000;
     width: 100%;
     height: 100%;
     opacity: 0.5;
@@ -130,7 +141,7 @@ input {
 .sobreposicao img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
 }
@@ -142,130 +153,29 @@ input {
 }
 
 .celular img {
-    width: 400px;
+    width: 300px;
 }
 
 .input-senha {
     position: relative;
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 12px;
 }
 
 .input-senha input {
-    padding: 10px;
-    font-size: 15px;
+    padding: 7px;
+    font-size: 13px;
     flex: 1;
 }
 
 .password-toggle {
     position: absolute;
-    right: 10px;
+    right: 8px;
     cursor: pointer;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-    main {
-        flex-direction: column;
-        width: 75%;
-    }
-
-    .container-direito {
-        display: none;
-    }
-
-    .container-esquerdo {
-        padding: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        padding: 10px;
-    }
-
-    main {
-        width: 75%;
-    }
-
-    .container-esquerdo {
-        padding: 25px;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
-
-}
-
-.erro {
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
-}
-
-.parametros-senha {
-    font-size: 12px;
-    color: #666;
-    margin-top: -15px;
-}
-
-.parametros-senha p {
-    margin-left: 2vh;
-}
-
-.parametros-senha ul {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 15px;
-    list-style: none;
-    padding-left: 2vh;
-}
-
-.parametros-senha li {
-    position: relative;
-    margin: 4px 0;
-    padding-left: 20px;
-    transition: color 0.2s ease;
-}
-
-.parametros-senha li::before {
-    content: "❌";
-    position: absolute;
-    left: 0;
-    color: red;
-    transition: all 0.3s ease;
-}
-
-.parametros-senha li.valid {
-    color: green;
-}
-
-.parametros-senha li.valid::before {
-    content: "✔";
-    color: green;
-}
-
-.parametros-senha li.invalid {
-    color: red;
-}
-
+/* ===== Estilização refinada do seletor de Estado ===== */
 select#estado {
     width: 100%;
     padding: 8px 10px;
@@ -298,4 +208,52 @@ select#estado option {
     color: #333;
     background: #fff;
     font-size: 13px;
+}
+
+/* ===== Animação celular ===== */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+        width: 85%;
+        height: auto;
+    }
+
+    .container-direito {
+        display: none;
+    }
+
+    .container-esquerdo {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 8px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
 }

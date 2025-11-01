@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HydroCore - Home Editável</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between bg-white shadow px-4 py-3">
+    <!-- Botão hamburguer -->
+    <button id="menu-toggle" class="md:hidden p-2 rounded text-gray-700 hover:bg-gray-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <h1 class="text-xl font-bold text-blue-900">HydroCore</h1>
+
+    <div class="flex items-center gap-2">
+      <span class="text-gray-600">Usuário</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A9 9 0 1118.364 4.56M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+    </div>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="bg-blue-900 text-white w-64 min-h-screen transform -translate-x-full md:translate-x-0 transition-transform duration-200 fixed md:static z-40">
+      <nav class="mt-6">
+        <a href="#home" class="flex items-center px-6 py-3 hover:bg-blue-800">🏠 Home</a>
+        <a href="#funcionarios" class="flex items-center px-6 py-3 hover:bg-blue-800">👤 Funcionários</a>
+        <a href="#cargos" class="flex items-center px-6 py-3 hover:bg-blue-800">🏷️ Cargos</a>
+        <a href="#produtos" class="flex items-center px-6 py-3 hover:bg-blue-800">⚗️ Produtos</a>
+        <a href="#estoque" class="flex items-center px-6 py-3 hover:bg-blue-800">📦 Estoque</a>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main class="flex-1 p-6 md:ml-64 space-y-10">
+
+      <!-- Home -->
+      <section id="home" class="bg-white shadow rounded-lg p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold">🏭 Informações da ETA</h2>
+          <div>
+            <button id="editBtn" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Editar</button>
+            <button id="saveBtn" class="hidden bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">Salvar</button>
+            <button id="cancelBtn" class="hidden bg-gray-400 text-white px-3 py-1 rounded hover:bg-gray-500">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- Exibição -->
+        <div id="etaView" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-4 rounded shadow-sm">
+            <h3 class="font-semibold text-gray-700 mb-2">Tipo</h3>
+            <p id="viewTipo">ETA Convencional</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded shadow-sm">
+            <h3 class="font-semibold text-gray-700 mb-2">Volume Tratado</h3>
+            <p id="viewVolume">500 m³/dia</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded shadow-sm md:col-span-2">
+            <h3 class="font-semibold text-gray-700 mb-2">Endereço</h3>
+            <p id="viewEndereco">Rua das Águas, 123 - Centro, São Paulo - SP, CEP 01000-000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded shadow-sm">
+            <h3 class="font-semibold text-gray-700 mb-2">Plano Escolhido</h3>
+            <p id="viewPlano" class="text-blue-700 font-bold">Profissional</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded shadow-sm">
+            <h3 class="font-semibold text-gray-700 mb-2">Dados de Pagamento</h3>
+            <p id="viewPagamento">Método: Cartão de Crédito<br>Status: <span class="text-green-600 font-semibold">Ativo</span><br>Próxima Fatura: 15/09/2025</p>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <form id="etaForm" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div>
+            <label class="block text-sm font-medium">Tipo</label>
+            <input id="inputTipo" type="text" class="w-full p-2 border rounded" value="ETA Convencional"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Volume Tratado</label>
+            <input id="inputVolume" type="text" class="w-full p-2 border rounded" value="500 m³/dia"/>
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium">Endereço</label>
+            <input id="inputEndereco" type="text" class="w-full p-2 border rounded"
+                   value="Rua das Águas, 123 - Centro, São Paulo - SP, CEP 01000-000"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Plano Escolhido</label>
+            <input id="inputPlano" type="text" class="w-full p-2 border rounded" value="Profissional"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Dados de Pagamento</label>
+            <textarea id="inputPagamento" class="w-full p-2 border rounded">Método: Cartão de Crédito
+Status: Ativo
+Próxima Fatura: 15/09/2025</textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const editBtn = document.getElementById('editBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const etaView = document.getElementById('etaView');
+    const etaForm = document.getElementById('etaForm');
+
+    const fields = {
+      tipo: { view: document.getElementById('viewTipo'), input: document.getElementById('inputTipo') },
+      volume: { view: document.getElementById('viewVolume'), input: document.getElementById('inputVolume') },
+      endereco: { view: document.getElementById('viewEndereco'), input: document.getElementById('inputEndereco') },
+      plano: { view: document.getElementById('viewPlano'), input: document.getElementById('inputPlano') },
+      pagamento: { view: document.getElementById('viewPagamento'), input: document.getElementById('inputPagamento') }
+    };
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('-translate-x-full');
+    });
+
+    editBtn.addEventListener('click', () => {
+      etaView.classList.add('hidden');
+      etaForm.classList.remove('hidden');
+      editBtn.classList.add('hidden');
+      saveBtn.classList.remove('hidden');
+      cancelBtn.classList.remove('hidden');
+    });
+
+    saveBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      fields.tipo.view.textContent = fields.tipo.input.value;
+      fields.volume.view.textContent = fields.volume.input.value;
+      fields.endereco.view.textContent = fields.endereco.input.value;
+      fields.plano.view.textContent = fields.plano.input.value;
+      fields.pagamento.view.innerText = fields.pagamento.input.value;
+
+      etaForm.classList.add('hidden');
+      etaView.classList.remove('hidden');
+      saveBtn.classList.add('hidden');
+      cancelBtn.classList.add('hidden');
+      editBtn.classList.remove('hidden');
+    });
+
+    cancelBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      etaForm.classList.add('hidden');
+      etaView.classList.remove('hidden');
+      saveBtn.classList.add('hidden');
+      cancelBtn.classList.add('hidden');
+      editBtn.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>
+

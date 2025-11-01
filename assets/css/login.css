@@ -6,8 +6,6 @@ body {
     background-color: #EAF2FF;
     display: flex;
     justify-content: center;
-    transform: scale(0.85);
-    transform-origin: top;
     align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -15,9 +13,9 @@ body {
 
 main {
     display: flex;
-    width: 80%;
+    width: 75%;
     background-color: #fff;
-    height: 825px;
+    height: 700px;
     border-radius: 10px;
     margin-top: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.25);
@@ -53,7 +51,7 @@ form {
 }
 
 label {
-    margin: 7px;
+    margin: 10px;
     font-size: 14px;
     color: #333;
 }
@@ -62,19 +60,12 @@ input {
     padding: 10px;
     border: none;
     border-bottom: 2px solid #d9d9d9;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     font-size: 15px;
     outline: none;
     background: none;
 }
 
-.checkbox {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 15px;
-    color: #000;
-}
 
 .botao {
     background: #000;
@@ -90,23 +81,6 @@ input {
 
 .botao:hover {
     background: #222;
-}
-
-.login-text {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #444;
-    text-align: center;
-}
-
-.login-text a {
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.login-text a:hover {
-    text-decoration: underline;
 }
 
 .container-direito {
@@ -135,21 +109,12 @@ input {
     border-bottom-right-radius: 9px;
 }
 
-.celular {
-    text-align: center;
-    z-index: 2;
-    animation: float 3s ease-in-out infinite;
-}
-
-.celular img {
-    width: 400px;
-}
 
 .input-senha {
     position: relative;
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .input-senha input {
@@ -161,6 +126,7 @@ input {
 .password-toggle {
     position: absolute;
     right: 10px;
+    margin-top: -20px;
     cursor: pointer;
 }
 
@@ -178,7 +144,6 @@ input {
     }
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
     main {
         flex-direction: column;
@@ -210,92 +175,29 @@ input {
     h1 {
         font-size: 26px;
     }
-
 }
 
-.erro {
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
+
+/* Animação de rotação */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.parametros-senha {
-    font-size: 12px;
-    color: #666;
-    margin-top: -15px;
-}
-
-.parametros-senha p {
-    margin-left: 2vh;
-}
-
-.parametros-senha ul {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 15px;
-    list-style: none;
-    padding-left: 2vh;
-}
-
-.parametros-senha li {
+.logo-girando {
+    display: block;
+    width: 260px;             /* Aumenta o tamanho geral */
+    height: auto;             /* Mantém a proporção natural */
+    animation: girar 6s linear infinite;
+    transform-origin: center center;
+    z-index: 2;
     position: relative;
-    margin: 4px 0;
-    padding-left: 20px;
-    transition: color 0.2s ease;
 }
 
-.parametros-senha li::before {
-    content: "❌";
-    position: absolute;
-    left: 0;
-    color: red;
-    transition: all 0.3s ease;
-}
-
-.parametros-senha li.valid {
-    color: green;
-}
-
-.parametros-senha li.valid::before {
-    content: "✔";
-    color: green;
-}
-
-.parametros-senha li.invalid {
-    color: red;
-}
-
-select#estado {
-    width: 100%;
-    padding: 8px 10px;
-    margin: 4px 0 10px 0;
-    border: 1.3px solid #ccc;
-    border-radius: 8px;
-    font-size: 13px;
-    background-color: #fff;
-    color: #333;
-    outline: none;
-    appearance: none;
-    transition: all 0.2s ease-in-out;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 15px;
-    cursor: pointer;
-}
-
-select#estado:hover {
-    border-color: #0078ff;
-}
-
-select#estado:focus {
-    border-color: #0078ff;
-    box-shadow: 0 0 3px rgba(0, 120, 255, 0.4);
-}
-
-select#estado option {
-    color: #333;
-    background: #fff;
-    font-size: 13px;
+.login-text {
+    text-align: center;
 }
